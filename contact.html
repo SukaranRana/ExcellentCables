@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Excellent Cables</title>
+  </head>
+  <body style="background: #f1fafe">
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand display-4" href="index.html"
+          ><img src="./favicon-16x16.png" />Excellent Cables</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                ><img src="https://img.icons8.com/ios/16/ffffff/home--v1.png" />
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="tel:+919643618434"
+                    ><img
+                      src="https://img.icons8.com/fluent-systems-filled/16/000000/iphone.png"
+                    />
+                    Call us now</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mailto:gargnaman119@gmail.com"
+                    ><img
+                      src="https://img.icons8.com/small/16/000000/filled-message.png"
+                    />
+                    Send an email</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="reachUs.html"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/16/000000/map-marker--v1.png"
+                    />
+                    Reach Us</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="contact.html"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/16/000000/ask-question.png"
+                    />
+                    Ask for product details</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <!-- <a href="https://icons8.com/icon/uLWV5A9vXIPu/facebook">Facebook icon by Icons8</a> -->
+            <!-- <a href="https://icons8.com/icon/5MQ0gPAYYx7a/twitter">Twitter icon by Icons8</a> -->
+            <!-- <a href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">Instagram icon by Icons8</a> -->
+            <a href="https://www.facebook.com/naman.garg.37" target="_blank"
+              ><img
+                src="https://img.icons8.com/color/48/000000/facebook-new.png"
+            /></a>
+            <a href="https://twitter.com/NamanGa34005445?s=08" target="_blank"
+              ><img src="https://img.icons8.com/fluent/48/000000/twitter.png"
+            /></a>
+            <a href="https://www.instagram.com/naman.garg.37/" target="_blank"
+              ><img
+                src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+            /></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- form -->
+    <div class="jumbotron bg-light">
+      <div class="container my-4">
+        <h3 class="display-6 text-center">
+          Tell us what you need, and we’ll help you get quotes!
+        </h3>
+        <br />
+        <br />
+        <form>
+          <div class="form-group">
+            <label for="quotes" class="form-label"
+              >I want quotes for: <span style="color: red">*</span></label
+            >
+            <select required="required" class="form-control">
+              <option value="select" disabled>--Select your product--</option>
+              <option value="product1">Twin-Twisted Flexible Wire</option>
+              <option value="product2">Aluminium Twin Core Cable</option>
+              <option value="product3">Multi-Core Cable</option>
+              <option value="product4">Twin Flat Cable</option>
+              <option value="product5">Speaker Wire</option>
+              <option value="product6">Hook-Up Wire</option>
+              <option value="product5">Aluminium CTS Wire</option>
+              <option value="product6">Data Cable</option>
+            </select>
+          </div>
+          <br />
+
+          <div class="form-group">
+            <label for="name">Name:<span style="color: red">*</span></label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required="required"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="mobile"
+              >Mobile Number:<span style="color: red">*</span></label
+            >
+            <input
+              class="form-control"
+              id="mobile"
+              type="text"
+              placeholder="Enter contact number"
+              required="required"
+              pattern="[1-9][0-9]{9}"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="email">Email id:</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="Enter Email Id"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="quantity"
+              >Quantity(in meters):<span style="color: red">*</span></label
+            >
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Enter quantity"
+              required="required"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="description"
+              >Briefly describe your requirement:<span style="color: red"
+                >*</span
+              ></label
+            >
+            <textarea
+              class="form-control"
+              placeholder="Briefly describe your requirement"
+              rows="3"
+              cols="20"
+              required="required"
+            ></textarea>
+            <br />
+          </div>
+          <div>
+            <button
+              id="bt"
+              type="submit"
+              class="btn btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#formModal"
+              value="Save data to file"
+              onclick="saveFile()"
+            >
+              Submit Requirement
+            </button>
+            <button
+              type="reset"
+              class="btn btn-outline-info"
+              data-bs-toggle="modal"
+              data-bs-target="#resetModal"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- additionalinfo -->
+      <br /><br /><br />
+      <div class="container">
+        <small
+          ><span style="color: red">*</span> marks for mandatory fields.</small
+        >
+      </div>
+      <!-- footer -->
+      <footer class="container pt-3 mt-4 text-muted border-top">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          © 2017–2021 Company, Inc. · ·
+          <span><a href="#">Privacy</a> · · <a href="#">Terms</a></span>
+        </p>
+      </footer>
+
+      
+      <!--Reset Modal -->
+      <div
+        class="modal fade"
+        id="resetModal"
+        tabindex="-1"
+        aria-labelledby="resetModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="resetModalLabel">Info!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Form is Reset.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
