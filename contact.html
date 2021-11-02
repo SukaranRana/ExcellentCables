@@ -16,7 +16,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon" />
     <title>Excellent Cables</title>
   </head>
   <body style="background: #f1fafe">
@@ -125,21 +125,21 @@
         </h3>
         <br />
         <br />
-        <form>
+        <form action="mail.php" method="POST">
           <div class="form-group">
             <label for="quotes" class="form-label"
               >I want quotes for: <span style="color: red">*</span></label
             >
-            <select required="required" class="form-control">
-              <option value="select" disabled>--Select your product--</option>
-              <option value="product1">Twin-Twisted Flexible Wire</option>
-              <option value="product2">Aluminium Twin Core Cable</option>
-              <option value="product3">Multi-Core Cable</option>
-              <option value="product4">Twin Flat Cable</option>
-              <option value="product5">Speaker Wire</option>
-              <option value="product6">Hook-Up Wire</option>
-              <option value="product5">Aluminium CTS Wire</option>
-              <option value="product6">Data Cable</option>
+            <select required="required" class="form-control productType">
+              <option value="select" selected='selected' id="selectYourProduct">--Select your product--</option>
+              <option value="Twin-Twisted Flexible Wire">Twin-Twisted Flexible Wire</option>
+              <option value="Aluminium Twin Core Cable">Aluminium Twin Core Cable</option>
+              <option value="Multi-Core Cable">Multi-Core Cable</option>
+              <option value="Twin Flat Cable">Twin Flat Cable</option>
+              <option value="Speaker Wire">Speaker Wire</option>
+              <option value="Hook-Up Wire">Hook-Up Wire</option>
+              <option value="Aluminium CTS Wire">Aluminium CTS Wire</option>
+              <option value="Data Cable">Data Cable</option>
             </select>
           </div>
           <br />
@@ -147,8 +147,9 @@
           <div class="form-group">
             <label for="name">Name:<span style="color: red">*</span></label>
             <input
+            name="name"
               class="form-control"
-              id="name"
+              id="customerName"
               type="text"
               placeholder="Enter your name"
               required="required"
@@ -160,6 +161,7 @@
               >Mobile Number:<span style="color: red">*</span></label
             >
             <input
+            name="mobile"
               class="form-control"
               id="mobile"
               type="text"
@@ -172,6 +174,7 @@
           <div class="form-group">
             <label for="email">Email id:</label>
             <input
+            name="email"
               class="form-control"
               id="email"
               type="email"
@@ -184,7 +187,8 @@
               >Quantity(in meters):<span style="color: red">*</span></label
             >
             <input
-              class="form-control"
+            name="quantity"
+              class="form-control quantityRequired"
               id="name"
               type="text"
               placeholder="Enter quantity"
@@ -199,7 +203,8 @@
               ></label
             >
             <textarea
-              class="form-control"
+            name="message"
+              class="form-control productDescription"
               placeholder="Briefly describe your requirement"
               rows="3"
               cols="20"
@@ -209,21 +214,14 @@
           </div>
           <div>
             <button
-              id="bt"
-              type="submit"
-              class="btn btn-outline-success"
-              data-bs-toggle="modal"
-              data-bs-target="#formModal"
-              value="Save data to file"
-              onclick="saveFile()"
+              class="btn btn-outline-success submitButton"
+              type='submit'
             >
               Submit Requirement
             </button>
             <button
               type="reset"
-              class="btn btn-outline-info"
-              data-bs-toggle="modal"
-              data-bs-target="#resetModal"
+              class="btn btn-outline-info resetButton"
             >
               Reset
             </button>
@@ -245,31 +243,5 @@
           <span><a href="#">Privacy</a> · · <a href="#">Terms</a></span>
         </p>
       </footer>
-
-      
-      <!--Reset Modal -->
-      <div
-        class="modal fade"
-        id="resetModal"
-        tabindex="-1"
-        aria-labelledby="resetModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="resetModalLabel">Info!</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">Form is Reset.</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
