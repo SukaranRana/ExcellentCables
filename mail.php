@@ -2,6 +2,7 @@
 if(isset($_POST['email'])){
     $admin_email="sukaranrana.rana@gmail.com";
     $name=$_POST['name'];
+    $mobile=$_POST['mobile'];
     $email=$_POST['email'];
     $quantity=$_POST['quantity'];
     $message=$_POST['message'];
